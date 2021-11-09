@@ -8,6 +8,8 @@ const getLastName = (name) => {
 };*/
 
 const NameList = () => {
+    const initialData =  {id: '', firstName: ''};
+    const [studentList, setStudentList] = useState(initialData);
 
     return (
     <h1>Hello</h1>
