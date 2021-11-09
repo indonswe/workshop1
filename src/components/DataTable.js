@@ -1,4 +1,5 @@
 import React from 'react';
+import TableRow from './TableRow';
 
 const DataTable = () => {
     const [studentList, setStudentList] = useState(initialData);
@@ -6,7 +7,8 @@ const DataTable = () => {
     return (
 
         <div>
-            
+            <div>TableRow</div>
+
         </div>
     );
 };
