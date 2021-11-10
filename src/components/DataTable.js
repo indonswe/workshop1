@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+import React, { useEffect, useState } from 'react';
 //import TableRow from './TableRow';
 
 
@@ -41,15 +42,15 @@ const TableRow = (props) => {
         const studentList = [
             {
                 id: 1,
-                firstName: Karl,
+                firstName: 'Karl',
             },
             {
                 id: 2,
-                firstName: Dorian,
+                firstName: 'Dorian',
             },
             {
                 id: 3,
-                firstName: Kalle,
+                firstName: 'Kalle',
             },
         ]
         const [students, setStudents] = useState(studentList);
@@ -60,7 +61,9 @@ const TableRow = (props) => {
     return (
 
         <div>
-            
+            <TableHeader/>
+            <TableAction/>
+            <TableRow/>
             <h1>Yoo</h1>
 
         </div>
