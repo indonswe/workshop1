@@ -24,7 +24,7 @@ const TableRow = (props) => {
     return (
         <ul>
             {
-                props.students.map( (student) => (<li>{student}</li>))
+                props.students.map( (student) => (<li>{student.id}</li>))
                 //props.students.map( (student) => (<li>{getLastName(student)}</li>))
             }
         </ul>
@@ -63,7 +63,7 @@ const TableRow = (props) => {
         <div>
             <TableHeader/>
             <TableAction/>
-            <TableRow/>
+            <TableRow students = {studentList}/>;
             <h1>Yoo</h1>
 
         </div>
